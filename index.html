@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b3a35" />
+  <title>رَهف | رفيق الصلاة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="top-bar"><button class="icon-button" aria-label="الإعدادات">⚙</button><div class="location"><span class="pin">●</span> دمشق، سوريا <small>تغيير</small></div><button class="icon-button" aria-label="التقويم">▣</button></section>
+
+    <section class="hero">
+      <div class="moon moon-one"></div><div class="moon moon-two"></div><div class="stars">✦ &nbsp;·&nbsp;&nbsp; ✧ &nbsp;&nbsp;·&nbsp; ✦</div>
+      <p class="greeting">السلام عليك يا <span id="userName">أحمد</span>،</p>
+      <h1>حان وقت <strong id="nextPrayer">صلاة المغرب</strong></h1>
+      <p class="countdown" id="countdown">متبقي ٠١:٤٢:٢٧</p>
+      <div class="prayer-orbit"><div class="arc"></div><div class="sun">☼</div><b>١٨:٢٢</b><span>المغرب</span></div>
+      <p class="date">الأربعاء، ٢٦ صفر ١٤٤٨ هـ <i></i> ٩ سبتمبر ٢٠٢٦ م</p>
+    </section>
+
+    <section class="prayer-strip" aria-label="مواقيت الصلاة">
+      <button><span>الفجر</span><b>٠٥:٠٣</b></button><button><span>الشروق</span><b>٠٦:٢٩</b></button><button><span>الظهر</span><b>١٢:٣٧</b></button><button><span>العصر</span><b>١٦:١١</b></button><button class="active"><span>المغرب</span><b>١٨:٢٢</b></button><button><span>العشاء</span><b>١٩:٤٢</b></button>
+    </section>
+
+    <section class="content">
+      <div class="memorial"><div class="memorial-flower">❋</div><div><span>صدقة جارية عن روح المرحومة</span><b>رهف القصير</b></div><button aria-label="تفاصيل الذكرى">‹</button></section>
+      <div class="section-heading"><div><p>وردك اليومي</p><h2>طمأنينة بين يديك</h2></div><button class="text-button">عرض الكل</button></div>
+      <div class="cards">
+        <article class="card dhikr"><span class="card-icon">۞</span><small>أذكار المساء</small><h3>تُضيء قلبك<br>وتُحصّن يومك</h3><div class="progress"><i></i></div><footer><span>١٢ من ٢٧</span><button class="round-play" aria-label="تشغيل الأذكار">▶</button></footer></article>
+        <article class="card library"><span class="card-icon">☷</span><small>مكتبة السُنّة</small><h3>اقرأ ما يُحيي<br>القلب ويهديه</h3><div class="book-pills"><span>رياض الصالحين</span><span>الأربعون</span><span>الشمائل</span></div><footer><button class="read-button">ابدأ القراءة ←</button></footer></article>
+      </div>
+
+      <div class="controls" aria-label="إعدادات الصلاة السريعة"><div><span class="control-icon">♬</span><p>مؤذن الحرم</p><small>صوت الأذان</small></div><div><span class="control-icon bell">⌁</span><p>التنبيهات مفعّلة</p><small>وتعمل في الخلفية</small><i></i></div></div>
+
+      <div class="section-heading compact"><div><p>ورد من السُنّة</p><h2>لا تنسَ أن تُصلّي</h2></div><button class="text-button">المزيد</button></div>
+      <article class="hadith"><span class="quote">”</span><p>«أحبُّ الأعمالِ إلى اللهِ أدومُها وإن قلَّ»</p><small>رواه البخاري ومسلم · رياض الصالحين</small><button class="save" aria-label="حفظ الحديث">♡</button></article>
+    </section>
+
+    <nav class="bottom-nav"><button class="selected"><span>⌂</span>الرئيسية</button><button><span>◴</span>صلاتي</button><button class="quran"><span>☽</span></button><button><span>▤</span>المكتبة</button><button><span>♙</span>حسابي</button></nav>
+  </main>
+  <aside class="setup-card" id="setupCard"><button class="close" id="closeSetup">×</button><span>خطوة أخيرة</span><h2>بماذا نُناديك؟</h2><p>ليكون تذكير الصلاة والأذكار أقرب إلى قلبك.</p><div><input id="nameInput" placeholder="اكتب اسمك" value="أحمد"><button id="saveName">حفظ</button></div></aside>
+  <script src="app.js"></script>
+</body>
+</html>
